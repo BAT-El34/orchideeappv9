@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Orchidée Nature Management System",
+  "description": "Système de gestion complet pour Orchidée Nature : produits, facturation, caisse, commandes et rapports IA. Mobile-first et PWA.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}

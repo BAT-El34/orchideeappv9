@@ -1,0 +1,21 @@
+{
+  "name": "Orchidée Nature Management System",
+  "short_name": "Orchidée POS",
+  "description": "Système de gestion complet pour Orchidée Nature",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#B45309",
+  "icons": [
+    {
+      "src": "https://picsum.photos/seed/orchidee/192/192",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://picsum.photos/seed/orchidee/512/512",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

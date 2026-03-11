@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --radius-sm: 4px;
+  --color-primary: #B45309;
+}
+
+@layer base {
+  body {
+    @apply bg-neutral-50 text-neutral-900 font-sans antialiased;
+    font-size: 14px;
+  }
+}
+
+.glass-panel {
+  @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-sm;
+}
+
+.btn-primary {
+  @apply bg-[#B45309] text-white px-4 py-2 rounded-sm font-medium transition-all active:scale-[0.98] hover:bg-[#92400E] shadow-sm hover:shadow-md disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.input-field {
+  @apply w-full px-4 py-2.5 bg-neutral-50 border border-neutral-200 rounded-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:bg-white focus:border-[#B45309] focus:ring-4 focus:ring-[#B45309]/5 transition-all duration-200;
+}
+
+.input-icon-wrapper {
+  @apply relative flex items-center;
+}
+
+.input-icon {
+  @apply absolute left-3.5 text-neutral-400 transition-colors duration-200;
+}
+
+.input-field:focus + .input-icon,
+.input-field:not(:placeholder-shown) + .input-icon {
+  @apply text-[#B45309];
+}
+
+.label-sm {
+  @apply block text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 mb-2;
+}
